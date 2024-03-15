@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fulfillment Masters</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/vaibhavi-css.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <!-- =====navigation bar starts===== -->
+  <section class="bg-black sticky top-0 py-3 z-10">
+    <header class="container mx-auto px-2 md:px-0">
+      <nav class=" flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white-600">
+        <div>
+          <a href="#">
+            <a href="index.html"><img class="h-8 w-auto" src="/assets/images/white-logo.svg" alt="Fulfillment Logo"></a>
+          </a>
+        </div>
+
+        <i class="bi bi-list h-6 w-6 cursor-pointer md:hidden block text-white font-bold text-2xl text-white"
+          id="menu-button"></i>
+
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul class=" pt-4 text-base text-white md:flex md:justify-between md:items-center  md:pt-0">
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="#about">About</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="#services">Services</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="#pricing">Pricing</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="#contact-us">Contact</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600 me-2"
+                href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 h-12 rounded-full w-12 flex justify-center items-center transition ease-in delay-150 block hover:bg-sky-600 text-white bg-orange-600 text-center"
+                href="#"><i class="text-lg bi bi-headset"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </section>
+  <!-- =====navigation bar end===== -->
+
+  <!-- =====hero banner starts===== -->
+  <section class="hero-banner">
+    <div class="container mx-auto px-2 md:px-0 md:py-10 sm:py-3">
+      <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-7 lg:col-span-7">
+          <h1 class="banner-text">
+            THE ULTIMATE <span class="heading">AMAZON FBA </span>PREP
+            SERVICE
+          </h1>
+          <p class="text-2xl font-light text-gray-500 mt-5 mb-10">
+            With Fulfillment Masters by your side, you prep less and profit
+            more!
+          </p>
+          <div class="kpi-card">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 divide-x">
+              <div class="md:flex justify-center items-center px-3 mb-5 md:px-0 md:mb-0">
+                <div>
+                  <p class="font-normal">Happy Clients</p>
+                  <div class="flex gap-x-2 mt-2">
+                    <i class="bi bi-emoji-smile text-2xl banner-icon"></i>
+                    <p class="text-3xl font-semibold text-black">50</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:flex justify-center items-center px-3 mb-5  md:px-0 md:mb-0">
+                <div>
+                  <p class="font-normal">Complete Shipment</p>
+                  <div class="flex gap-x-2 mt-2">
+                    <i class="bi bi-truck text-2xl banner-icon"></i>
+                    <p class="text-3xl font-semibold text-black">308</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:flex justify-center items-center px-3  md:px-0 md:mb-0">
+                <div>
+                  <p class="font-normal">Customer Reviews</p>
+                  <div class="flex gap-x-2 mt-2">
+                    <i class="bi bi-star text-2xl banner-icon"></i>
+                    <p class="text-3xl font-semibold text-black">4.6</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:flex justify-center items-center px-3  md:px-0 md:mb-0">
+                <div>
+                  <p class="font-normal">Working Hours</p>
+                  <div class="flex gap-x-2 mt-2">
+                    <i class="bi bi-clock text-2xl banner-icon"></i>
+                    <p class="text-3xl font-semibold text-black">24/7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="grid rounded-xl grid-cols-2 md:grid-cols-4 bg-white p-4 my-auto flex justify-center align-middle divide-x my-5">
+            <div class="text-gray-500 pl-10 text-sm md:text-md my-2">
+              <p class="font-normal">Happy Clients</p>
+              <div class="flex md:gap-x-2 py-2">
+                <i class="bi bi-emoji-smile lg:text-2xl banner-icon"></i>
+                <p class="lg:text-3xl font-semibold text-black">50</p>
+              </div>
+            </div>
+            <div class="text-gray-500 pl-5 text-sm md:text-md my-2">
+              <p class="font-normal">Complete Shipment</p>
+              <div class="flex md:gap-x-2 py-2">
+                <i class="bi bi-truck lg:text-2xl banner-icon"></i>
+                <p class="lg:text-3xl font-semibold text-black">308</p>
+              </div>
+            </div>
+            <div class="text-gray-500 pl-10 text-sm md:text-md my-2">
+              <p class="font-normal">Customer Reviews</p>
+              <div class="flex md:gap-x-2 py-2">
+                <i class="bi bi-star lg:text-2xl banner-icon"></i>
+                <p class="lg:text-3xl font-semibold text-black">4.6</p>
+              </div>
+            </div>
+            <div class="text-gray-500 pl-10 text-sm md:text-md my-2">
+              <p class="font-normal">Working Hours</p>
+              <div class="flex md:gap-x-2 py-2">
+                <i class="bi bi-clock lg:text-2xl banner-icon"></i>
+                <p class="lg:text-3xl font-semibold text-black">24/7</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-span-12 md:col-span-5 lg:col-span-5 h-auto flex justify-center items-center my-2">
+          <img src="/assets/images/hero-banner-image.svg" alt="hero-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====hero banner ends===== -->
+
+  <!-- =====about us section starts===== -->
+  <section class="about-us-section my-8" id="about">
+    <div class="grid grid-cols-12">
+      <div class="col-span-12 md:col-span-5">
+        <img class="w-full h-full object-cover" src="/assets/images/about-us.png" />
+      </div>
+      <div
+        class="col-span-12 md:col-span-6 lg:col-span-7 xl:col-span-7 px-5 md:pt-0 sm:pt-5 h-auto flex flex-col justify-between">
+        <div>
+          <a class="link font-bold text-md uppercase">ABOUT US</a>
+          <p class="text-3xl lg:text-4xl font-bold md:leading-loose mt-3 mb-5">
+            <span class="heading">#1</span> Place To Manage All Of Your
+            Shipments
+          </p>
+          <p class="text-gray-500 text-md font-light mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quod explicabo numquam autem fugiat
+            distinctio totam ex magni eveniet molestiae ut sequi dolorem rerum qui, quibusdam necessitatibus repellat
+            fuga nisi. Obcaecati deserunt rerum consequuntur molestiae, incidunt, error ab maxime praesentium voluptatum
+            tempora nostrum doloremque quos. Odio labore fuga at, voluptates ipsam voluptatibus aliquid atque? Ea sequi
+            provident laboriosam! Exercitationem aspernatur dolore minus tempore vel saepe at impedit quia minima
+            reiciendis soluta labore veritatis iure, praesentium atque nam facere. Quae quis deserunt libero quasi fuga
+            ratione. Quae soluta dicta itaque rem laborum distinctio sed quod ullam consectetur adipisci. Natus, unde
+            possimus!
+          </p>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div
+              class="text-gray-500 text-xs md:text-md lg:text-lg mt-5 md:mt-0 border-b-2 border-orange-600 p-5 bg-slate-50 hover:shadow-lg transition-all">
+              <img class="h-16" src="/assets/images/cost-effective-img.svg" />
+              <p class="shipping-feature font-bold text-xl my-3">
+                Cost Effective
+              </p>
+              <p class="font-normal text-gray-500 text-lg md:text-sm pr-4">
+                Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem
+                diam justo.
+              </p>
+            </div>
+            <div
+              class="text-gray-500 text-xs md:text-md lg:text-lg mt-5 md:mt-0 border-b-2 border-sky-600 p-5 bg-slate-50 hover:shadow-lg transition-all">
+              <img class="h-16" src="/assets/images/reliability-image.svg" />
+              <p class="shipping-feature font-bold text-xl my-3">
+                Reliability
+              </p>
+              <p class="font-normal text-gray-500 text-lg md:text-sm pr-4">
+                Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem
+                diam justo.
+              </p>
+            </div>
+            <div
+              class="text-gray-500 text-xs md:text-md lg:text-lg mt-5 md:mt-0 border-b-2 border-orange-600 p-5 bg-slate-50 hover:shadow-lg transition-all">
+              <img class="h-16" src="/assets/images/time.svg" />
+              <p class="shipping-feature font-bold text-xl my-3">
+                Value Time
+              </p>
+              <p class="font-normal text-gray-500 text-lg md:text-sm pr-4">
+                Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem
+                diam justo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div>
+          <div class="grid lg:grid-cols-4">
+            <a href=""
+              class="primary-button flex flex-row items-center justify-center w-full px-4 py-4 mb-4 text-sm font-bold leading-6 capitalize duration-100 transform rounded-sm shadow cursor-pointer sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10 hover:shadow-lg hover:-translate-y-1">
+              Explore More
+            </a>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- =====about us section ends===== -->
+
+  <div id="basicModal" x-data="{ open: false }" @open-me="open=true" @close-me="open=false"
+    x-init="setTimeout(() => open = true, 2000)">
+    <div @keydown.window.escape="open = false" x-show="open" class="relative z-10" aria-labelledby="modal-title"
+      x-ref="dialog" aria-modal="true">
+
+
+      <div x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200"
+        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+        x-description="Background backdrop, show/hide based on modal state."
+        class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+
+
+      <div class="fixed z-10 inset-0 overflow-y-auto">
+        <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+
+          <div x-show="open" x-transition:enter="ease-out duration-300"
+            x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200"
+            x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+            x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            x-description="Modal panel, show/hide based on modal state."
+            class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full"
+            @click.away="open = false">
+            <div class="bg-white sm:p-4">
+              <p class="text-3xl lg:text-4xl font-bold md:leading-loose mb-5">Send a message to
+                <span class="heading">connect</span>
+                with us
+              </p>
+              <div class="grid grid-cols-12 gap-x-6 gap-y-4 sm:grid-cols-6">
+                <div class="col-span-12 md:col-span-3">
+                  <label for="your-name" class="block text-sm font-medium leading-6">YOUR NAME</label>
+                  <div class="mt-2">
+                    <input name="your-name" id="your-name" autocomplete="given-name"
+                      class="block input-field w-full border-0 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      placeholder="eg. Jhon Duo">
+                  </div>
+                </div>
+                <div class="col-span-12 md:col-span-3">
+                  <label for="email" class="block text-sm font-medium leading-6">E-MAIL ADDRESS</label>
+                  <div class="mt-2">
+                    <input name="email" id="email" autocomplete="email"
+                      class="block input-field w-full border-0 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      placeholder="eg. example@gmail.com">
+                  </div>
+                </div>
+                <div class="col-span-full">
+                  <label for="subject" class="block text-sm font-medium leading-6">SUBJECT</label>
+                  <div class="mt-2">
+                    <input name="subject" id="subject" autocomplete="subject"
+                      class="block input-field w-full border-0 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      placeholder="eg. Ocean Shipping of Company Name">
+                  </div>
+                </div>
+                <div class="col-span-full">
+                  <label for="message" class="block text-sm font-medium leading-6 text-gray-900">MESSAGE</label>
+                  <div class="mt-2">
+                    <textarea id="message" name="message" rows="3"
+                      class="block input-field w-full border-0 py-1.5 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                      placeholder="Type your message....."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <button type="button"
+                class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-orange-600 text-base font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                @click="open = false">
+                Send Message
+              </button>
+              <button type="button"
+                class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                @click="open = false">
+                Cancel
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====our services section starts===== -->
+  <section class="our-services pb-8" id="services">
+    <div class="container mx-auto px-2 md:px-0 py-10">
+      <p class="link font-bold text-center text-md mt-5">
+        OUR SERVICES
+      </p>
+      <p class="text-3xl lg:text-4xl font-bold md:leading-loose mt-3 mb-5 text-center">
+        Comprehensive and Streamlined
+        <span class="heading"> Services</span>
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div>
+          <div class="service-item p-4">
+            <div class="overflow-hidden mb-4">
+              <img class="img-fluid" src="/assets/images/Inspecting.png" alt="">
+            </div>
+            <h4 class="mb-3">Inspecting</h4>
+            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+            <!-- <a class="btn-slide mt-2" href="services.html"> <i class="bi bi-arrow-right"></i><span>Read More</span></a> -->
+          </div>
+        </div>
+        <div>
+          <div class="service-item p-4">
+            <div class="overflow-hidden mb-4">
+              <img class="img-fluid" src="/assets/images/Labeling.png" alt="">
+            </div>
+            <h4 class="mb-3">Labeling</h4>
+            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+            <!-- <a class="btn-slide mt-2" href="services.html"> <i class="bi bi-arrow-right"></i><span>Read More</span></a> -->
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="service-item p-4">
+            <div class="overflow-hidden mb-4">
+              <img class="img-fluid" src="/assets/images/Packaging.png" alt="">
+            </div>
+            <h4 class="mb-3">Packaging</h4>
+            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+            <!-- <a class="btn-slide mt-2" href="services.html"> <i class="bi bi-arrow-right"></i><span>Read More</span></a> -->
+          </div>
+        </div>
+        <div>
+          <div class="service-item p-4">
+            <div class="overflow-hidden mb-4">
+              <img class="img-fluid" src="/assets/images/Boxing.png" alt="">
+            </div>
+            <h4 class="mb-3">Boxing</h4>
+            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+            <!-- <a class="btn-slide mt-2" href="services.html"> <i class="bi bi-arrow-right"></i><span>Read More</span></a> -->
+          </div>
+        </div>
+        <div>
+          <div class="service-item p-4">
+            <div class="overflow-hidden mb-4">
+              <img class="img-fluid" src="/assets/images/Storage.png" alt="">
+            </div>
+            <h4 class="mb-3">Storage</h4>
+            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+            <!-- <a class="btn-slide mt-2" href="services.html"> <i class="bi bi-arrow-right"></i><span>Read More</span></a> -->
+          </div>
+        </div>
+        <div>
+          <div class="service-item p-4">
+            <div class="overflow-hidden mb-4">
+              <img class="img-fluid" src="/assets/images/Shipping.png" alt="">
+            </div>
+            <h4 class="mb-3">Shipping</h4>
+            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+            <!-- <a class="btn-slide mt-2" href="services.html"> <i class="bi bi-arrow-right"></i><span>Read More</span></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====our services section ends===== -->
+
+  <!-- =====pricing section starts===== -->
+  <section class="our-pricing bg-white" id="pricing">
+    <div class="container mx-auto px-2 md:px-0 py-10">
+      <div class="grid grid-cols-12 md:gap-6 flex justify-center my-5">
+        <div class="col-span-12 md:col-span-8">
+          <a href="#" class="link font-bold text-md mt-3">
+            PRICING
+          </a>
+          <p class="text-3xl lg:text-4xl font-bold md:leading-loose mt-3 mb-5">
+            <span class="heading">Plan</span> that best suits your needs
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 gap-6 flex justify-center my-5">
+        <div class="level-card-dark col-span-12 rounded-xl justify-center p-5">
+          <!-- <div class="flex justify-center items-center"> -->
+          <span class="level-2 rounded-full p-2 px-4 justify-center">Serices Pricing Plan</span>
+          <!-- </div> -->
+          <p class="font-light text-gray-300 text-md pt-4">Essentials to find plan - market fit</p>
+          <ul role="list" class="text-xs md:text-md mt-3 border rounded-md">
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-semibold capitalize px-3 py-2 bg-orange-600 rounded-ss-md"
+                style="font-size: 16px; margin-bottom: 0;">Offered Services
+              </p>
+              <p class="font-semibold px-3 py-2  bg-orange-600 rounded-se-md"
+                style="font-size: 14px; margin-bottom: 0;">
+                Service Charges (ex. VAT)</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">Sign up & address
+              </p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">Free</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">check & inspect
+                pallet
+                (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.02p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">fnsku labelling
+                (per unit)
+              </p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.03</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">bundling (per
+                unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.5(upto 3 product) +£0.20 per
+                item</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">poly bag (per
+                unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.25</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">bubble wrap (per
+                unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.35</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">sticker/label
+                removal (per
+                unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.1</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box x-large
+                (610*254*330)mm (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£1.99p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box large
+                (305*229*152)mm (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.89p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box large-2
+                (305*305*305)mm (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.99p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box med
+                (229*152*102)mm
+                (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.59p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box med-2
+                (254*203*152)mm (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.69p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box small
+                (127*127*127)mm (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.49p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">case forwarding
+                (per case)
+              </p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£3.00</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">pallet
+                processing  (per
+                pallet)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£7.50</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">new box small
+                (127*127*127)mm (per unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.39p</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">pallet shipping
+              </p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">From £70*</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">suffocation label
+                (per
+                unit)</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.03 (per unit)</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x border-b">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">hazmat label (per
+                unit)
+              </p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£0.03 (per unit)</p>
+            </li>
+            <li class="grid grid-cols-2 divide-x">
+              <p class="font-normal capitalize px-3 py-2" style="font-size: 14px; margin-bottom: 0;">Storage</p>
+              <p class="font-light px-3 py-2" style="font-size: 14px; margin-bottom: 0;">£3 per week per pallet</p>
+            </li>
+
+
+          </ul>
+        </div>
+
+        <!-- <div class="level-card col-span-12 md:col-span-4 rounded-xl justify-center p-10">
+          <button class="level rounded-full p-2 px-4 my-3 justify-center">Basic</button>
+          <p class="font-light text-gray-500 text-lg my-3">Essentials to find plan - market fit</p>
+          <p class="md:text-md font-bold my-3"><span class="md:text-5xl price">$8.99</span>/per month</p>
+          <button class="get-started-btn rounded-full p-3 my-5 w-full justify-center my-3">Get Started</button>
+          <hr class="line my-3">
+          <p class="font-medium text-lg uppercase mt-6">BASIC PLAN INCLUDES</p>
+          <ul role="list" class="text-xs md:text-md space-y-3 mt-3">
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">Lorem ipsum</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">Stet stet justo</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">dolor sit amet</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">consectetur adipiscing</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">lectus fermentum ultricies</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">lacus tincidunt varius</p>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="level-card-dark col-span-12 rounded-xl justify-center p-10">
+          <button class="level-2 rounded-full p-2 px-4 my-3 justify-center">Standard</button>
+          <p class="font-light text-gray-400 text-lg my-3">Essentials to find plan - market fit</p>
+          <p class="md:text-md font-bold my-3"><span class="md:text-5xl price">$15.99</span>/per month</p>
+          <button class="get-started-btn2 rounded-full p-3 my-5 w-full justify-center my-3">Get Started</button>
+          <hr class="line my-3">
+          <p class="font-medium text-lg uppercase mt-6">STANDARD PLAN INCLUDES</p>
+          <ul role="list" class="text-xs md:text-md space-y-3 mt-3">
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">Lorem ipsum</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">Stet stet justo</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">dolor sit amet</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">consectetur adipiscing</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">lectus fermentum ultricies</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">lacus tincidunt varius</p>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="level-card col-span-12 md:col-span-4 rounded-xl justify-center p-10">
+          <button class="level-3 rounded-full p-2 px-4 my-3 justify-center">PRO</button>
+          <p class="font-light text-gray-500 text-lg my-3">Essentials to find plan - market fit</p>
+          <p class="md:text-md font-bold my-3"><span class="md:text-5xl price">$20.20</span>/per month</p>
+          <button class="get-started-btn rounded-full p-3 my-5 w-full justify-center my-3">Get Started</button>
+          <hr class="line my-3">
+          <p class="font-medium text-lg uppercase mt-6">PRO PLAN INCLUDES</p>
+          <ul role="list" class="text-xs md:text-md space-y-3 mt-3">
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">Lorem ipsum</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">Stet stet justo</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">dolor sit amet</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">consectetur adipiscing</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">lectus fermentum ultricies</p>
+            </li>
+            <li class="flex gap-3 items-center">
+              <i class="bi bi-check-circle-fill text-xl"></i>
+              <p class="font-light" style="font-size: 16px; margin-bottom: 0;">lacus tincidunt varius</p>
+            </li>
+          </ul>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- =====pricing section ends===== -->
+
+  <!-- =====faq section starts===== -->
+  <section class="FAQ-section">
+    <div class="container mx-auto px-2 md:px-0 py-10">
+      <a href="services.html" class="link font-bold flex justify-center text-md mt-5">
+        SOME QUESTIONS
+      </a>
+      <p class="text-3xl lg:text-4xl font-bold md:leading-loose mt-3 mb-5 text-center">
+        Frequently
+        <span class="heading"> asked</span> questions
+      </p>
+
+      <div class="grid grid-cols-1 my-8">
+        <div x-data="{ expanded: true }" class="p-2 bg-white">
+          <h2>
+            <button id="faqs-title-01" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
+              <span class="faq-question">Bobortis ridiculus ut velit tellus eu?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-02" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-02">
+              <span class="faq-question">Pibero tortor cursus faucibus neque porta?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-02" role="region" aria-labelledby="faqs-title-02"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-03" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-03">
+              <span class="faq-question">Rortor cursus faucibus neque porta?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-03" role="region" aria-labelledby="faqs-title-03"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-04" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-04">
+              <span class="faq-question">Wibero tortor cursus faucibus porta?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-04" role="region" aria-labelledby="faqs-title-04"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====faq section ends===== -->
+  <!-- =====contact section starts===== -->
+  <section class="contact-section" id="contact-us">
+    <div class="container mx-auto px-2 md:px-0 pb-10">
+      <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-4 p-5 pt-0 sm:pt-5">
+          <a href="contact-us.html" class="link font-bold text-md mb-3">CONTACT US</a>
+          <p class="text-3xl lg:text-4xl font-bold md:leading-loose mt-3 mb-5">Send a message to
+            <span class="heading">connect</span>
+            with us
+          </p>
+          <p class="text-gray-500 text-md font-light my-3">
+            Lorem ipsum dolor sit amet consectetur. Justo erat pharetra mattis pellentesque vestibulum in blandit. Quis
+            aliquam faucibus sed velit arcu.
+          </p>
+          <div class="contact-box md:max-w-xs">
+            <div class="icon-box">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="ml-5">
+              <p class="sm:text-xs md:text-sm font-medium">Email us</p>
+              <a href="" class="sm:text-xs md:text-sm text-slate-500 text-wrap">fulfillmentmasters@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-box md:max-w-xs mt-5">
+            <div class="icon-box">
+              <i class="bi bi-telephone-outbound-fill"></i>
+            </div>
+            <div class="ml-5">
+              <p class="sm:text-xs md:text-sm font-medium">Contact us</p>
+              <a href="" class="sm:text-xs md:text-sm text-slate-500 text-wrap">+88017 000 555 15</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-8 lg:col-span-8 bg-white p-8">
+          <div class="grid grid-cols-12 gap-x-6 gap-y-4 sm:grid-cols-6">
+            <div class="col-span-12 md:col-span-3">
+              <label for="your-name" class="block text-sm font-medium leading-6">YOUR NAME</label>
+              <div class="mt-2">
+                <input name="your-name" id="your-name" autocomplete="given-name"
+                  class="block input-field w-full border-0 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  placeholder="eg. Jhon Duo">
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-3">
+              <label for="email" class="block text-sm font-medium leading-6">E-MAIL ADDRESS</label>
+              <div class="mt-2">
+                <input name="email" id="email" autocomplete="email"
+                  class="block input-field w-full border-0 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  placeholder="eg. example@gmail.com">
+              </div>
+            </div>
+            <div class="col-span-full">
+              <label for="subject" class="block text-sm font-medium leading-6">SUBJECT</label>
+              <div class="mt-2">
+                <input name="subject" id="subject" autocomplete="subject"
+                  class="block input-field w-full border-0 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  placeholder="eg. Ocean Shipping of Company Name">
+              </div>
+            </div>
+            <div class="col-span-full">
+              <label for="message" class="block text-sm font-medium leading-6 text-gray-900">MESSAGE</label>
+              <div class="mt-2">
+                <textarea id="message" name="message" rows="3"
+                  class="block input-field w-full border-0 py-1.5 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                  placeholder="Type your message....."></textarea>
+              </div>
+            </div>
+            <!-- <button class="send-msg-btn p-4 rounded-md flex h-auto w-40 font-normal my-3">
+              <div>Send Message</div>
+              <i class="bi bi-arrow-right"></i>
+            </button> -->
+            <div class="col-span-12 md:col-span-2">
+              <a href=""
+                class="flex flex-row items-center justify-center w-full px-4 py-4 mb-4 text-sm font-bold bg-black text-white leading-6 capitalize duration-100 hover:bg-orange-600  rounded-sm cursor-pointer focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10">
+                Send Message
+                <span class="ml-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"
+                    class="w-5 h-5 fill-current">
+                    <path fill="currentColor"
+                      d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z">
+                    </path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====contact section ends===== -->
+
+
+  <!-- Gallery Section -->
+
+  <!-- Gellery Section Ends -->
+  <!-- =====footer section starts===== -->
+  <footer class="bg-white pb-12">
+    <div class="container mx-auto px-4 pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 pb-8">
+        <div class="pt-5 flex justify-center items-center md:justify-start">
+          <a href="index.html">
+            <img src="assets/css/image2/logo.svg">
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-5 pt-7 footer-links md:gap-8 sm:gap-2 lg:gap-2">
+          <div class=""><a href="#about">About us</a></div>
+          <div class=" "><a href="#services">Services</a></div>
+          <div class=" "><a href="#pricing">Pricing</a></div>
+          <div class=""><a href="#contact-us">Contact us</a></div>
+          <div class=""><a href="faq.html">FAQ</a></div>
+        </div>
+
+        <div class="flex justify-start pt-5 gap-2 footer-icon lg:justify-end md:justify-end justify-center">
+          <div class="circle-icon p-2"><i class="bi bi-linkedin"></i></div>
+          <div class="p-2 circle-icon "><i class="bi bi-instagram"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-twitter"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-facebook"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- copy right -->
+    <div class="container mx-auto px-4">
+      <hr>
+      <div class="copyright text-center flex justify-center gap-2 pt-5">
+        <i class="bi bi-c-circle pt-1"></i>
+        <div class="pt-2">
+          <p>2024 Fulfillment Masters</p>
+        </div>
+        <div class="p-2">
+          <p><a href="terms-conditions.html">Terms & Conditions</a></p>
+        </div>
+        <div class="p-2">
+          <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =====footer section ends===== -->
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

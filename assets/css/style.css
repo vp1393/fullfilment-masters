@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+
+:root {
+  --primary: #0061A9;
+  --secondary: #FF6A0C;
+  --black: #333333;
+  --gray: #909090;
+  --primary-text: 'DM Sans', sans-serif;
+  --secondary-text: 'Bebas Neue', sans-serif;
+  --hero-bg: #F8F8F8;
+}
+
+/* ===============================anshika chaprod css=========================  */
+
+/* =====index page styles===== */
+body {
+  font-family: var(--primary-text);
+}
+
+/* =====navigation bar styles===== */
+
+.navbar-icon {
+  background-color: var(--secondary);
+  color: #fff;
+}
+.active1{
+  color: #0061A9;
+}
+
+
+/* =====hero banner styles===== */
+.hero-banner {
+  background-image: url(/assets/images/banner-background.png);
+  color: #313131;
+  background-repeat: repeat;
+}
+
+.banner-text {
+  font-size: 6.7rem;
+  font-family: var(--secondary-text);
+  text-transform: uppercase;
+  line-height: 7.5rem;
+}
+
+.banner-icon {
+  color: var(--secondary);
+}
+
+.primary-button {
+  background-color: var(--secondary);
+  color: #fff;
+  font-weight: 300;
+}
+
+.kpi-card {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  background-color: #fff;
+  padding: 25px 5px;
+  border-radius: 20px;
+}
+
+/* =====about us section style===== */
+.about-us-section {
+  color: #333333;
+}
+
+.link {
+  color: var(--primary);
+}
+
+.shipping-feature {
+  color: var(--primary);
+}
+
+.explore-more-btn {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.explore-more-btn:hover {
+  background-color: #fff;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+/* =====our services section style===== */
+.our-services {
+  background-color: #EBF2F7;
+  color: #333333;
+}
+
+/* =====pricing section styles===== */
+.level-card {
+  border: 0.5px solid #CFD1D3;
+  background-color: #fff;
+  color: #13213B;
+  transition: .5s;
+}
+
+.level-card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.level-card-dark {
+  background-color: #13213B;
+  color: #fff;
+  border: 0.5px solid #13213B;
+  transition: .5s;
+}
+
+.level-card-dark:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.level {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.level-2 {
+  background-color: #9FFF3D;
+  color: #13213B;
+}
+
+.level-3 {
+  background-color: #19D079;
+  color: #fff;
+}
+
+.get-started-btn {
+  background-color: #13213B;
+  color: #F1F4F8;
+  transition: .5s;
+}
+
+.get-started-btn:hover {
+  background-color: var(--secondary);
+}
+
+.get-started-btn2 {
+  color: #13213B;
+  transition: .5s;
+  background-color: #F1F4F8;
+}
+
+.get-started-btn2:hover {
+  background-color: var(--secondary);
+  color: #F1F4F8;
+}
+
+.line {
+  color: #CFD1D3;
+}
+
+/* =====FAQ section style===== */
+.FAQ-section {
+  background-color: #F3F5FB;
+  color: #13213B;
+}
+
+.heading {
+  color: var(--secondary);
+}
+
+/* =====contact section style===== */
+.contact-section {
+  background-color: #F3F5FB;
+  color: #13213B;
+}
+
+.send-msg-btn {
+  background-color: #0F1424;
+  color: #fff;
+}
+
+.send-msg-btn:hover {
+  color: #0F1424;
+  background-color: #fff;
+  border: 1px solid #0F1424;
+}
+
+.contact-icon {
+  background-color: #F3F5F7;
+}
+
+.input-field {
+  background-color: #F3F5F7;
+}
+
+/* ==============================kaushik bhaiya css===============================  */
+
+/* =====FAQ Page CSS===== */
+.page-title {
+  font-family: var(--primary-text);
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 15px;
+  line-height: 55px;
+}
+
+.page-title span {
+  color: var(--secondary);
+}
+
+.custom-description {
+  font-family: var(--primary-text);
+  font-weight: 300;
+  color: var(--desc-color);
+  margin-top: 20px;
+}
+
+.sub-title {
+  font-family: var(--primary-text);
+  font-weight: 400;
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.faq-question {
+  font-family: var(--primary-text);
+  color: var(--dark-blue);
+  font-weight: medium;
+  transition: 0.3s;
+}
+
+.faq-question:hover {
+  color: var(--secondary);
+}
+
+.faq-answer {
+  font-family: var(--primary-text);
+  color: var(--desc-color);
+}
+
+.contact-box {
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+}
+
+.contact-box:hover {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.contact-box:hover .icon-box {
+  background-color: var(--primary);
+}
+
+.contact-box:hover .icon-box i {
+  color: #fff;
+}
+
+.contact-box a {
+  transition: all 0.3s;
+}
+
+.contact-box a:hover {
+  color: var(--secondary);
+}
+
+.icon-box {
+  transition: all .3s;
+  height: 50px;
+  width: 50px;
+  background-color: #F3F5F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box i {
+  font-size: 20px;
+}
+
+
+/* =====Terms and Conditions & Privacy Policy Pages CSS===== */
+.section-title {
+  font-family: var(--primary-text);
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.section-description {
+  font-family: var(--primary-text);
+  font-weight: 300;
+  color: var(--desc-color);
+  margin-bottom: 15px;
+}
+
+/* ===== home page services CSS===== */
+.service-item {
+  background-color: #fff;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+  font-family: var(--primary-text);
+  border-radius: 8px;
+}
+
+.service-item p {
+  color: #909090;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.service-item h4 {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.service-item img {
+  transition: .5s;
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+}
+
+.service-item a.btn-slide {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.service-item a.btn-slide i,
+.service-item a.btn-slide span {
+  position: relative;
+  height: 40px;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: var(--secondary);
+  border-radius: 0 35px 35px 0;
+  transition: .5s;
+  z-index: 2;
+}
+
+.team-item div.btn-slide span a i {
+  padding: 0 10px;
+}
+
+.team-item div.btn-slide span a:hover i {
+  background: var(--secondary);
+}
+
+.service-item a.btn-slide span {
+  padding-left: 0;
+  left: -100%;
+  z-index: 1;
+}
+
+.service-item:hover a.btn-slide i {
+  border-radius: 0;
+}
+
+.service-item:hover a.btn-slide span {
+  left: 0;
+}
+
+.service-item a.btn-slide:hover i,
+.service-item a.btn-slide:hover span {
+  background: var(--primary);
+}
+
+/* ===========================vaibhavi bhavsar css==============================  */
+
+

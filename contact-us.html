@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="/assets/css/vaibhavi-css.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+
+<body>
+    <!-- navigation bar starts -->
+    <section class="bg-black sticky top-0 py-3 z-10">
+      <header class="container mx-auto px-2 md:px-0">
+        <nav class=" flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white-600">
+          <div>
+            <a href="#">
+              <a href="index.html"><img class="h-8 w-auto" src="/assets/images/white-logo.svg" alt="Fulfillment Logo"></a>
+            </a>
+          </div>
+  
+          <i class="bi bi-list h-6 w-6 cursor-pointer md:hidden block text-white font-bold text-2xl text-white"
+            id="menu-button"></i>
+  
+          <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+            <ul class=" pt-4 text-base text-white md:flex md:justify-between md:items-center  md:pt-0">
+              <li>
+                <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600" href="about.html">About</a>
+              </li>
+              <li>
+                <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                  href="services.html">Services</a>
+              </li>
+              <li>
+                <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                  href="/#pricing">Pricing</a>
+              </li>
+              <li>
+                <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600 text-orange-600 " href="contact-us.html">Contact</a>
+              </li>
+              <li>
+                <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600 me-2"
+                  href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a class="my-5 md:my-0 md:mx-5 h-12 rounded-full w-12 flex justify-center items-center transition ease-in delay-150 block hover:bg-sky-600 text-white bg-orange-600 text-center"
+                  href="#"><i class="text-lg bi bi-headset"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <!-- navigation bar end -->
+    <!-- hero container -->
+    <section class="header-section pb-32">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-center header-heading pt-5">Get in touch with us </p>
+
+            <p class="text-center header-description ">Tell us a little about yourself and we’ll connect you with a
+                Fulfillment
+                <br class="hidden md:flex"> Masters within next 24hrs
+            </p>
+        </div>
+    </section>
+    <!-- over card container -->
+
+    <div class="container mx-auto  px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 header-card-container Lg:mx-40 md:mx-40">
+
+            <div class="p-5  text-center header-card">
+                <i class="bi bi-envelope flex justify-center pb-3"></i>
+                <a href="#">fulfillmentmasters@gmail.com</a>
+
+            </div>
+            <div class="p-5   text-center header-card ">
+                <i class="bi bi-telephone flex justify-center pb-3"></i>
+                <a href="tel:441234567890">+44 1234567890</a>
+            </div>
+            <div class="p-5   text-center header-card">
+                <i class="bi bi-geo-alt flex justify-center pb-3"></i>
+                <a href="">55/1 Lorem Ipsum, UK</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- form section -->
+    <section>
+        <div class="container mx-auto px-4 pt-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 Lg:mx-40 md:mx-40">
+                <div class="p-5">
+                    <form>
+                        
+                        <div class="sm:col-span-3">
+                                <label for="your-name" class="block text-sm font-medium leading-6">YOUR NAME</label>
+                                <div class="mt-2">
+                                  <input name="your-name" id="your-name" autocomplete="given-name" class="block input-field w-full border-0 py-1.5 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="eg. Jhon Duo">
+                                </div>
+                              </div>
+
+                         <div class="sm:col-span-3">
+                                <label for="your-name" class="block text-sm font-medium leading-6">EMAIL ADDRESS</label>
+                                <div class="mt-2">
+                                  <input name="your-name" id="your-name" autocomplete="given-name" class="block input-field w-full border-0 py-1.5 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="eg. example@gmail.com">
+                                </div>
+                              </div>
+
+                            <div class="col-span-3">
+                                <label for="subject" class="block text-sm font-medium leading-6">SUBJECT</label>
+                                <div class="mt-2">
+                                  <input name="subject" id="subject" autocomplete="subject" class="block input-field w-full border-0 py-1.5 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="eg. Ocean Shipping of Company Name">
+                                </div>
+                              </div>
+                    </form>
+                </div>
+
+                <div class="p-5">
+                    <form>
+                        <div class="col-span-full">
+                            <label for="message" class="block text-sm font-medium leading-6 text-gray-900">MESSAGE</label>
+                            <div class="mt-2">
+                              <textarea id="message" name="message" rows="3" class="block input-field w-full border-0 py-6 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="Type your message....."></textarea>
+                            </div>
+                          </div>
+
+                        <button class="btn-submit mt-4 py-2">Send Your Message Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+   <!-- =====footer section starts===== -->
+  <footer class="bg-gray-100 pb-12 mt-12">
+    <div class="container mx-auto px-4 pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 pb-8">
+        <div class="pt-5">
+          <a href="index.html"> <img src="assets/css/image2/logo.svg">
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-5 pt-7 footer-links md:gap-8 sm:gap-2 lg:gap-2">
+          <div class="justify-items-center"><a href="about.html">About us</a></div>
+          <div class="justify-items-center "><a href="services.html">Services</a></div>
+          <div class="justify-items-center"><a href="#">Pricing</a></div>
+          <div class="justify-items-center"><a href="contact-us.html">Contact us</a></div>
+          <div class="justify-items-center"><a href="faq.html">FAQ</a></div>
+        </div>
+
+        <div class="flex justify-start pt-5 gap-2 footer-icon lg:justify-end md:justify-end justify-center">
+          <div class="circle-icon p-2"><i class="bi bi-linkedin"></i></div>
+          <div class="p-2 circle-icon "><i class="bi bi-instagram"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-twitter"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-facebook"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- copy right -->
+    <div class="container mx-auto px-4">
+      <hr>
+      <div class="copyright text-center flex justify-center gap-2 pt-5">
+        <i class="bi bi-c-circle pt-1"></i>
+        <div class="pt-2">
+          <p>2024 Fulfillment Masters</p>
+        </div>
+        <div class="p-2">
+          <p><a href="terms-conditions.html">Terms & Conditions</a></p>
+        </div>
+        <div class="p-2">
+          <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =====footer section ends===== -->
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

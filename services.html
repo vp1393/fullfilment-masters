@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>services</title>
+  <link rel="stylesheet" href="/assets/css/vaibhavi-css.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <!-- =====navigation bar starts===== -->
+  <section class="bg-black sticky top-0 py-3 z-10">
+    <header class="container mx-auto px-2 md:px-0">
+      <nav class=" flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white-600">
+        <div>
+          <a href="#">
+            <a href="index.html"><img class="h-8 w-auto" src="/assets/images/white-logo.svg" alt="Fulfillment Logo"></a>
+          </a>
+        </div>
+
+        <i class="bi bi-list h-6 w-6 cursor-pointer md:hidden block text-white font-bold text-2xl text-white"
+          id="menu-button"></i>
+
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul class=" pt-4 text-base text-white md:flex md:justify-between md:items-center  md:pt-0">
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="about.html">About</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600 text-orange-600"
+                href="services.html">Services</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="/#pricing">Pricing</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="contact-us.html">Contact</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600 me-2"
+                href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 h-12 rounded-full w-12 flex justify-center items-center transition ease-in delay-150 block hover:bg-sky-600 text-white bg-orange-600 text-center"
+                href="#"><i class="text-lg bi bi-headset"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </section>
+  <!-- =====navigation bar end===== -->
+
+  <section style="background-color: #F3F5F7; padding-bottom: 20px;">
+    <div class="container mx-auto px-2 md:px-0">
+      <h2 class="page-title">Our Services</h2>
+      <p class="text-center custom-description">Lorem ipsum dolor sit amet consectetur. Tellus pellentesque
+        pellentesque
+        eget at amet quis
+        massa <br class="hidden md:flex"> tristique. Dui lacus egestas sed a maecenas nisl facilisi.</p>
+    </div>
+  </section>
+  <!-- tab section start -->
+  <section>
+    <div class="container mx-auto px-4 mt-5 lg:flex md:flex gap-8 sm:grid">
+
+      <div class="content-all-tabs  text-black" onclick="openTabFromClick(event)">
+        <h1 class="tab-servises">Services</h1>
+        <div class="tab hover:text-sky-600" onclick="openTab(1)"><span> <i class="bi bi-chevron-right"></i></span>Air
+          Freight</div>
+        <hr>
+        <div class="tab hover:text-sky-600" onclick="openTab(2)"><span> <i class="bi bi-chevron-right"></i></span> Ocean
+          Freight</div>
+        <hr>
+        <div class="tab hover:text-sky-600" onclick="openTab(3)"><span> <i class="bi bi-chevron-right"></i></span> Train
+          Freight</div>
+        <hr>
+        <div class="tab hover:text-sky-600" onclick="openTab(4)"><span> <i class="bi bi-chevron-right"></i></span> Road
+          Freight</div>
+        <hr>
+        <div class="tab hover:text-sky-600" onclick="openTab(5)"><span> <i class="bi bi-chevron-right"></i></span>
+          Customs Clearance</div>
+        <hr>
+        <div class="tab hover:text-sky-600" onclick="openTab(6)"><span> <i class="bi bi-chevron-right"></i></span>
+          Warehouse Solutions</div>
+        <hr>
+
+        <div class=" text-center lg:p-8 md:p-8 pb-12  tab-contact mt-8 md:mt-2 lg:mt-8">
+          <img src="assets/css/image2/callicon.png" alt="" class="mx-auto p-5" />
+          <h>Let’s Talk</h>
+          <p class="mt-4">+44 1234567890</p>
+          <p>fulfillmentmasters@gmail.com</p>
+          <button class="rounded px-4 py-2  duration-300 mt-8 call-us-btn">Call us right now</button>
+        </div>
+
+      </div>
+      <!-- tab 1 -->
+
+      <div class="content-tabs">
+
+        <div id="tab1" class="tab-content active">
+          <div class="lg:flex items-center gap-2 lg:grid grid-cols-12  grid-cols-12">
+            <div class="col-span-7">
+              <h2 class="tab-title"> <span>Air </span> Freight Solutions - Fast, <br class="hidden md:flex"> Reliable,
+                and Global Shipping.</h2>
+              <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet
+                diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                lorem sit clita duo justo
+                magna dolore erat amet.
+              </p>
+
+              <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis
+                corrupti in velit
+                culpa aut distinctio asperiores qui Quis odio.Et adipisci
+                voluptatem sed
+                perspiciatis omnis aut repellat totam in facere sunt ex fuga
+                voluptas quo accusamus atque. Non consectetur explicabo nam
+                totam excepturi .Et fugit illum sit totam pariatur qui
+                aliquam debitis et quos culpa ad autem labore
+              </p>
+            </div>
+            <div class="col-span-5">
+              <img src="assets/css/image2/airplane.png" alt="Image 1" class=" h-80 w-80 mt-8 tab-image w-full">
+            </div>
+          </div>
+
+          <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+            dolore erat amet</p>
+
+          <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in
+            velit culpa aut distinctio asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis
+            omnis aut repellat totam in facere sunt ex fuga voluptas quo accusamus atque. Non consectetur
+            explicabo nam totam excepturi aut earum odio ut consequatur voluptatum et blanditiis deleniti
+            qui culpa obcaecati id possimus ipsa.</p>
+
+          <p class="tab-description">Et voluptas quos aut obcaecati tempora quo ipsum reprehenderit eum
+            impedit voluptatem ut numquam dolor qui voluptatem dolores. Ut nihil facere et consequatur sunt
+            et voluptas nulla. A modi facilis ut alias similique qui molestiae dolores in inventore harum
+            qui eius mollitia aut reprehenderit voluptates.
+            Et fugit illum sit totam pariatur qui aliquam debitis et quos culpa ad autem labore aut quidem
+            ipsam non repudiandae deleniti. Aut incidunt natus non aliquid fugiat ut alias asperiores ab
+            quisquam galisum ut corporis sint et aliquid aperiam.</p>
+        </div>
+
+        <!-- tab 2 -->
+        <div id="tab2" class="tab-content">
+          <div class="lg:flex items-center gap-2 lg:grid grid-cols-12">
+            <div class="col-span-7">
+              <h2 class="tab-title"> <span>Ocean</span> Freight Solutions - Fast, <br class="hidden md:flex"> Reliable,
+                and Global Shipping.</h2>
+              <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet
+                diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                lorem sit clita duo justo
+                magna dolore erat amet.
+              </p>
+
+              <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis
+                corrupti in velit
+                culpa aut distinctio asperiores qui Quis odio.Et adipisci
+                voluptatem sed
+                perspiciatis omnis aut repellat totam in facere sunt ex fuga
+                voluptas quo accusamus atque. Non consectetur explicabo nam
+                totam excepturi .Et fugit illum sit totam pariatur qui
+                aliquam debitis et quos culpa ad autem labore
+              </p>
+
+            </div>
+            <div class="col-span-5">
+              <img src="assets/images/our-services-image2.png" alt="Image 1" class=" h-80 w-80 mt-8 tab-image w-full">
+            </div>
+          </div>
+          <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+            dolore erat amet</p>
+
+          <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in
+            velit culpa aut distinctio asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis
+            omnis aut repellat totam in facere sunt ex fuga voluptas quo accusamus atque. Non consectetur
+            explicabo nam totam excepturi aut earum odio ut consequatur voluptatum et blanditiis deleniti
+            qui culpa obcaecati id possimus ipsa.</p>
+
+          <p class="tab-description">Et voluptas quos aut obcaecati tempora quo ipsum reprehenderit eum
+            impedit voluptatem ut numquam dolor qui voluptatem dolores. Ut nihil facere et consequatur sunt
+            et voluptas nulla. A modi facilis ut alias similique qui molestiae dolores in inventore harum
+            qui eius mollitia aut reprehenderit voluptates.
+            Et fugit illum sit totam pariatur qui aliquam debitis et quos culpa ad autem labore aut quidem
+            ipsam non repudiandae deleniti. Aut incidunt natus non aliquid fugiat ut alias asperiores ab
+            quisquam galisum ut corporis sint et aliquid aperiam.</p>
+        </div>
+
+        <!-- tab 3 -->
+        <div id="tab3" class="tab-content">
+          <div class="lg:flex items-center gap-2 lg:grid grid-cols-12">
+            <div class="col-span-7">
+              <h2 class="tab-title"> <span>Train</span> Freight Solutions - Fast, <br class="hidden md:flex"> Reliable,
+                and Global Shipping.</h2>
+              <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet
+                diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                lorem sit clita duo justo
+                magna dolore erat amet.
+              </p>
+
+              <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis
+                corrupti in velit
+                culpa aut distinctio asperiores qui Quis odio.Et adipisci
+                voluptatem sed
+                perspiciatis omnis aut repellat totam in facere sunt ex fuga
+                voluptas quo accusamus atque. Non consectetur explicabo nam
+                totam excepturi .Et fugit illum sit totam pariatur qui
+                aliquam debitis et quos culpa ad autem labore
+              </p>
+
+            </div>
+            <div class="col-span-5">
+              <img src="assets/images/our-services-image3.png" alt="Image 1" class=" h-80 w-80 mt-8 tab-image w-full">
+            </div>
+          </div>
+          <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+            dolore erat amet</p>
+
+          <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in
+            velit culpa aut distinctio asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis
+            omnis aut repellat totam in facere sunt ex fuga voluptas quo accusamus atque. Non consectetur
+            explicabo nam totam excepturi aut earum odio ut consequatur voluptatum et blanditiis deleniti
+            qui culpa obcaecati id possimus ipsa.</p>
+
+          <p class="tab-description">Et voluptas quos aut obcaecati tempora quo ipsum reprehenderit eum
+            impedit voluptatem ut numquam dolor qui voluptatem dolores. Ut nihil facere et consequatur sunt
+            et voluptas nulla. A modi facilis ut alias similique qui molestiae dolores in inventore harum
+            qui eius mollitia aut reprehenderit voluptates.
+            Et fugit illum sit totam pariatur qui aliquam debitis et quos culpa ad autem labore aut quidem
+            ipsam non repudiandae deleniti. Aut incidunt natus non aliquid fugiat ut alias asperiores ab
+            quisquam galisum ut corporis sint et aliquid aperiam.</p>
+        </div>
+        <!-- tab 4 -->
+
+        <div id="tab4" class="tab-content">
+          <div class="lg:flex items-center gap-2 md:grid lg:grid grid-cols-12">
+            <div class="col-span-7">
+              <h2 class="tab-title"> <span>Road </span> Freight Solutions - Fast, <br class="hidden md:flex"> Reliable,
+                and Global Shipping.</h2>
+              <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet
+                diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                lorem sit clita duo justo
+                magna dolore erat amet.
+              </p>
+
+              <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis
+                corrupti in velit
+                culpa aut distinctio asperiores qui Quis odio.Et adipisci
+                voluptatem sed
+                perspiciatis omnis aut repellat totam in facere sunt ex fuga
+                voluptas quo accusamus atque. Non consectetur explicabo nam
+                totam excepturi .Et fugitillum sit totam pariatur qui
+                aliquam debitis et quos culpa ad autem labore
+              </p>
+
+            </div>
+            <div class="col-span-5">
+              <img src="assets/images/our-services-image4.png" alt="Image 1" class=" h-80 w-80 mt-8 tab-image w-full">
+            </div>
+
+          </div>
+          <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+            dolore erat amet</p>
+
+          <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in
+            velit culpa aut distinctio asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis
+            omnis aut repellat totam in facere sunt ex fuga voluptas quo accusamus atque. Non consectetur
+            explicabo nam totam excepturi aut earum odio ut consequatur voluptatum et blanditiis deleniti
+            qui culpa obcaecati id possimus ipsa.</p>
+
+          <p class="tab-description">Et voluptas quos aut obcaecati tempora quo ipsum reprehenderit eum
+            impedit voluptatem ut numquam dolor qui voluptatem dolores. Ut nihil facere et consequatur sunt
+            et voluptas nulla. A modi facilis ut alias similique qui molestiae dolores in inventore harum
+            qui eius mollitia aut reprehenderit voluptates.
+            Et fugit illum sit totam pariatur qui aliquam debitis et quos culpa ad autem labore aut quidem
+            ipsam non repudiandae deleniti. Aut incidunt natus non aliquid fugiat ut alias asperiores ab
+            quisquam galisum ut corporis sint et aliquid aperiam.</p>
+        </div>
+        <!-- tab 5 -->
+        <div id="tab5" class="tab-content">
+          <div class="lg:flex items-center gap-2 md:grid lg:grid grid-cols-12">
+            <div class="col-span-7">
+              <h2 class="tab-title"> <span>Customs</span> Freight Solutions - Fast, <br class="hidden md:flex">
+                Reliable, and Global Shipping.</h2>
+              <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet
+                diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                lorem sit clita duo justo
+                magna dolore erat amet.
+              </p>
+
+              <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis
+                corrupti in velit
+                culpa aut distinctio asperiores qui Quis odio.Et adipisci
+                voluptatem sed
+                perspiciatis omnis aut repellat totam in facere sunt ex fuga
+                voluptas quo accusamus atque. Non consectetur explicabo nam
+                totam excepturi .Et fugit illum sit totam pariatur qui
+                aliquam debitis et quos culpa ad autem labore
+              </p>
+
+            </div>
+            <div class="col-span-5">
+              <img src="assets/images/our-services-image5.png" alt="Image 1" class=" h-80 w-80 mt-8 tab-image w-full">
+            </div>
+
+          </div>
+          <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+            dolore erat amet</p>
+
+          <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in
+            velit culpa aut distinctio asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis
+            omnis aut repellat totam in facere sunt ex fuga voluptas quo accusamus atque. Non consectetur
+            explicabo nam totam excepturi aut earum odio ut consequatur voluptatum et blanditiis deleniti
+            qui culpa obcaecati id possimus ipsa.</p>
+
+          <p class="tab-description">Et voluptas quos aut obcaecati tempora quo ipsum reprehenderit eum
+            impedit voluptatem ut numquam dolor qui voluptatem dolores. Ut nihil facere et consequatur sunt
+            et voluptas nulla. A modi facilis ut alias similique qui molestiae dolores in inventore harum
+            qui eius mollitia aut reprehenderit voluptates.
+            Et fugit illum sit totam pariatur qui aliquam debitis et quos culpa ad autem labore aut quidem
+            ipsam non repudiandae deleniti. Aut incidunt natus non aliquid fugiat ut alias asperiores ab
+            quisquam galisum ut corporis sint et aliquid aperiam.</p>
+        </div>
+        <!-- tab 6 -->
+        <div id="tab6" class="tab-content">
+          <div class="lg:flex items-center gap-2 md:grid lg:grid grid-cols-12">
+            <div class="col-span-7">
+              <h2 class="tab-title"> <span>Warehouse </span> Freight Solutions - Fast, <br class="hidden md:flex">
+                Reliable, and Global Shipping.</h2>
+              <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet
+                diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                lorem sit clita duo justo
+                magna dolore erat amet.
+              </p>
+
+              <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis
+                corrupti in velit
+                culpa aut distinctio asperiores qui Quis odio.Et adipisci
+                voluptatem sed
+                perspiciatis omnis aut repellat totam in facere sunt ex fuga
+                voluptas quo accusamus atque. Non consectetur explicabo nam
+                totam excepturi .Et fugit illum sit totam pariatur qui
+                aliquam debitis et quos culpa ad autem labore
+              </p>
+
+            </div>
+            <div class="col-span-5">
+              <img src="assets/images/our-services-image6.png" alt="Image 1" class=" h-80 w-80 mt-8 tab-image w-full">
+            </div>
+
+          </div>
+          <p class="tab-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+            dolore erat amet</p>
+
+          <p class="tab-description">Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in
+            velit culpa aut distinctio asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis
+            omnis aut repellat totam in facere sunt ex fuga voluptas quo accusamus atque. Non consectetur
+            explicabo nam totam excepturi aut earum odio ut consequatur voluptatum et blanditiis deleniti
+            qui culpa obcaecati id possimus ipsa.</p>
+
+          <p class="tab-description">Et voluptas quos aut obcaecati tempora quo ipsum reprehenderit eum
+            impedit voluptatem ut numquam dolor qui voluptatem dolores. Ut nihil facere et consequatur sunt
+            et voluptas nulla. A modi facilis ut alias similique qui molestiae dolores in inventore harum
+            qui eius mollitia aut reprehenderit voluptates.
+            Et fugit illum sit totam pariatur qui aliquam debitis et quos culpa ad autem labore aut quidem
+            ipsam non repudiandae deleniti. Aut incidunt natus non aliquid fugiat ut alias asperiores ab
+            quisquam galisum ut corporis sint et aliquid aperiam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====footer section starts===== -->
+  <footer class="bg-gray-100 pb-12 bg-gray-100 pb-12 mt-12">
+    <div class="container mx-auto px-4 pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 pb-8">
+        <div class="pt-5">
+          <a href="index.html">
+            <img src="assets/css/image2/logo.svg">
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-5 pt-7 footer-links md:gap-8 sm:gap-2 lg:gap-2">
+          <div class=""><a href="about.html">About us</a></div>
+          <div class=" "><a href="services.html">Services</a></div>
+          <div class=" "><a href="#">Pricing</a></div>
+          <div class=""><a href="contact-us.html">Contact us</a></div>
+          <div class=""><a href="faq.html">FAQ</a></div>
+        </div>
+
+        <div class="flex justify-start pt-5 gap-2 footer-icon lg:justify-end md:justify-end justify-center">
+          <div class="circle-icon p-2"><i class="bi bi-linkedin"></i></div>
+          <div class="p-2 circle-icon "><i class="bi bi-instagram"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-twitter"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-facebook"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- copy right -->
+    <div class="container mx-auto px-4">
+      <hr>
+      <div class="copyright text-center flex justify-center gap-2 pt-5">
+        <i class="bi bi-c-circle pt-1"></i>
+        <div class="pt-2">
+          <p>2024 Fulfillment Masters</p>
+        </div>
+        <div class="p-2">
+          <p><a href="terms-conditions.html">Terms & Conditions</a></p>
+        </div>
+        <div class="p-2">
+          <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =====footer section ends===== -->
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

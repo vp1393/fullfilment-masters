@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently asked questions</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/vaibhavi-css.css" />
+
+</head>
+
+<body>
+  <!-- navigation bar starts -->
+  <section class="bg-black sticky top-0 py-3 z-10">
+    <header class="container mx-auto px-2 md:px-0">
+      <nav class=" flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-white-600">
+        <div>
+          <a href="#">
+            <a href="index.html"><img class="h-8 w-auto" src="/assets/images/white-logo.svg" alt="Fulfillment Logo"></a>
+          </a>
+        </div>
+
+        <i class="bi bi-list h-6 w-6 cursor-pointer md:hidden block text-white font-bold text-2xl text-white"
+          id="menu-button"></i>
+
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul class=" pt-4 text-base text-white md:flex md:justify-between md:items-center  md:pt-0">
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href=/#about">About</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="/#services">Services</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="/#pricing">Pricing</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 hover:text-sky-600"
+                href="/#contact-us">Contact</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 block transition ease-in delay-150 text-orange-600 hover:text-sky-600 me-2"
+                href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a class="my-5 md:my-0 md:mx-5 h-12 rounded-full w-12 flex justify-center items-center transition ease-in delay-150 block hover:bg-sky-600 text-white bg-orange-600 text-center"
+                href="#"><i class="text-lg bi bi-headset"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </section>
+  <!-- navigation bar end -->
+  <section style="background-color: #F3F5F7; padding-bottom: 20px;">
+    <div class="container mx-auto px-2 md:px-0">
+      <h2 class="page-title">Frequently <span>asked</span> questions</h2>
+      <p class="text-center custom-description">Lorem ipsum dolor sit amet consectetur. Tellus pellentesque pellentesque
+        eget at amet quis
+        massa <br class="hidden md:flex"> tristique. Dui lacus egestas sed a maecenas nisl facilisi.</p>
+      <div class="grid grid-cols-1 my-8">
+        <div x-data="{ expanded: true }" class="p-2 bg-white">
+          <h2>
+            <button id="faqs-title-01" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
+              <span class="faq-question">Bobortis ridiculus ut velit tellus eu?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-02" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-02">
+              <span class="faq-question">Pibero tortor cursus faucibus neque porta?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-02" role="region" aria-labelledby="faqs-title-02"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-03" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-03">
+              <span class="faq-question">Rortor cursus faucibus neque porta?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-03" role="region" aria-labelledby="faqs-title-03"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-04" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-04">
+              <span class="faq-question">Wibero tortor cursus faucibus porta?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-04" role="region" aria-labelledby="faqs-title-04"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ expanded: false }" class="mt-5 p-2 bg-white">
+          <h2>
+            <button id="faqs-title-05" type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-05">
+              <span class="faq-question">Bobortis ridiculus ut velit tellus eu?</span>
+              <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                <rect y="7" width="16" height="2" rx="1"
+                  class="transform origin-center rotate-90 transition duration-200 ease-out"
+                  :class="{'!rotate-180': expanded}" />
+              </svg>
+            </button>
+          </h2>
+          <div id="faqs-text-05" role="region" aria-labelledby="faqs-title-05"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+            <div class="overflow-hidden">
+              <p class="pb-3 faq-answer">
+                Lorem ipsum dolor sit amet. Eos consectetur officiis et nobis corrupti in velit culpa aut distinctio
+                asperiores qui Quis odio.Et adipisci voluptatem sed perspiciatis omnis aut repellat totam in facere sunt
+                ex fuga voluptas quo accusamus atque. Non consectetur explicabo nam totam excepturi aut earum odio ut
+                consequatur voluptatum et blanditiis deleniti qui culpa obcaecati id possimus ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====footer section starts===== -->
+  <footer class="bg-white pb-12">
+    <div class="container mx-auto px-4 pb-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 pb-8">
+        <div class="pt-5 flex justify-center items-center md:justify-start">
+          <a href="index.html">
+            <img src="assets/css/image2/logo.svg">
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-5 pt-7 footer-links md:gap-8 sm:gap-2 lg:gap-2">
+          <div class=""><a href="/#about">About us</a></div>
+          <div class=" "><a href="/#services">Services</a></div>
+          <div class=" "><a href="/#pricing">Pricing</a></div>
+          <div class=""><a href="/#contact-us">Contact us</a></div>
+          <div class=""><a href="faq.html">FAQ</a></div>
+        </div>
+
+        <div class="flex justify-start pt-5 gap-2 footer-icon lg:justify-end md:justify-end justify-center">
+          <div class="circle-icon p-2"><i class="bi bi-linkedin"></i></div>
+          <div class="p-2 circle-icon "><i class="bi bi-instagram"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-twitter"></i></div>
+          <div class="p-2 circle-icon"><i class="bi bi-facebook"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- copy right -->
+    <div class="container mx-auto px-4">
+      <hr>
+      <div class="copyright text-center flex justify-center gap-2 pt-5">
+        <i class="bi bi-c-circle pt-1"></i>
+        <div class="pt-2">
+          <p>2024 Fulfillment Masters</p>
+        </div>
+        <div class="p-2">
+          <p><a href="terms-conditions.html">Terms & Conditions</a></p>
+        </div>
+        <div class="p-2">
+          <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =====footer section ends===== -->
+  <!-- footer section ends -->
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
